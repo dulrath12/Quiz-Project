@@ -1,17 +1,16 @@
 var saveScorebtn = document.getElementById('saveScore')
 var username = document.getElementById('username')
 var finalTime = document.getElementById('final-time')
-var mostRecentTime = document.getElementById('mostRecentTime')
+var mostRecentTime = localStorage.getItem('mostRecentTime')
 
 var highScores = JSON.parse(localStorage.getItem('highscores'))
 
-finalTime.innerText = mostRecentTime
 
 saveHighScore = e =>{
     e.preventDefault()
 
     var score = {
-        score: mostRecentTime
+        score: mostRecentTime,
         name: username.value
     }
 
