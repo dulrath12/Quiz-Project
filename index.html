@@ -6,22 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timed Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js"></script>
 </head>
 
 <body>
     <header>
         <h2><a href="">HighScores!</a></h2>
-        <h2 class="timer">Time Remaining: 0</h2>
+        <h2 id="timer">75</h2>
     </header>
 
-    <main class="quiz-area">
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+    <main class="quiz-area" id="quiz-questions">
+        <h1 class="intro" id="intro">Coding Quiz Challenge</h1>
+        <p id="quiz-instructions">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <div class="button">
         <button class="start-btn">Start Quiz</button>
-
+        </div>
+        <h1 id="question" class="question"></h1>
+        <div class="options-container">
+            <ul class="question-list">
+                <li>
+                    <p class="options-text" id="options-text" data-number="1"></p>
+                </li>
+                <li>
+                     <p class="options-text" id="options-text" data-number="2"></p>
+                </li>
+                <li>
+                    <p class="options-text" id="options-text" data-number="3"></p>
+                </li>
+                <li>
+                    <p class="options-text" id="options-text" data-number="4"></p>
+                </li>
+            </ul>
+        </div>
+        
     </main>
+
     
 </body>
-
+<script src="./assets/js/script.js"></script>
 </html>
