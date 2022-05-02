@@ -9,13 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="final-time"></h1>
         <form class="highscore-form">
-            <h2>Enter your name to save your highscore</h2>
+            <h1>HighScores Leaderboard</h1>
+            <h2 id="score"></h2>
+                <ul id="score-list"></ul>
             <input type="text" name="name" id="username" placeholder="Enter your name">
-            <button id="saveScore" class="hs-btn"type="submit" onclick="saveHighScore(event)"">Save</button>
+            <button id="hs-btn" class="hs-btn"type="submit" onclick="saveHighScore(event)"">Save</button>
         </form>
-        <button><a href="/index.html">Play Again!</a></button>
+        <button class="btns"><a href="./index.html">Play Again!</a></button>
+        <button class="btns" id="reset-btn" onclick="reset()">Reset Highscores</button>
     </div>
     
 

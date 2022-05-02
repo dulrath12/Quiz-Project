@@ -89,11 +89,24 @@ header {
     align-items: center;
     justify-content: center;
     width: 50%;
-    margin: 5px;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 5px auto;
 }
 
 input{
     padding: 5px;
     width: 250px;
     font-size: 20px;
+}
+
+.btns {
+    font-size: 20px;
+    margin: 5px auto;
+    padding: 5px auto;
+}
+
+.score-list {
+    font-size: 30px;
+    list-style: upper-roman;
 }
