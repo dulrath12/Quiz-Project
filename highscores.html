@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highscores</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="highscore-form">
+            <h1>HighScores Leaderboard</h1>
+            <h2 id="score"></h2>
+                <ul id="score-list"></ul>
+            <input type="text" name="name" id="username" placeholder="Enter your name">
+            <button id="hs-btn" class="hs-btn"type="submit" onclick="saveHighScore(event)"">Save</button>
+        </form>
+        <button class="btns"><a href="./index.html">Play Again!</a></button>
+        <button class="btns" id="reset-btn" onclick="reset()">Reset Highscores</button>
+    </div>
+    
+
+
+    <script src="./assets/js/highscores.js"></script>
+</body>
+</html> 
