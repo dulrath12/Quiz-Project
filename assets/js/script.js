@@ -112,7 +112,8 @@ optionsEl.forEach(option => {
         var classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
         if (classToApply === 'incorrect'){
-            newTimer()
+           // newTimer()
+           remainingTime = remainingTime - 10;
         }
 
 
