@@ -12,3 +12,7 @@ this was a somewhat challenging task for me, i ended up googling a lot of stuff 
 
 
 ### Links
+
+Repo: (https://github.com/dulrath12/Quiz-Project)
+
+Page: (https://dulrath12.github.io/Quiz-Project/)
